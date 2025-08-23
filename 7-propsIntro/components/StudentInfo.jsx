@@ -4,7 +4,6 @@ function StudentInfo({name, age}) {
     <>
     <h2>Student Name : {name}</h2>
     <h2>Student Age : {age}</h2>
-
     </>
   )
 }
