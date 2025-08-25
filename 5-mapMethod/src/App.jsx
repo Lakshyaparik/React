@@ -1,14 +1,33 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+//children passing
+import "bootstrap/dist/css/bootstrap.min.css";
+import Container from "./Container";
 function App() {
-  let foodItems = ['Pizza', 'Burger', 'Pasta', 'Salad', 'Sushi','kachori'];
-  return(
+  let foodItems = ["Pizza", "Burger", "Pasta", "Salad", "Sushi", "kachori"];
+  return (
     <>
-    <h1>Food Items</h1>
-    <div className="list-group">
-    {foodItems.map((item)=><a key={item} href="#" className="list-group-item list-group-item-action">{item}</a>)}
-</div>
+      <Container>
+        <h1>Food Items</h1>
+        <div className="list-group">
+          {foodItems.map((item) => (
+            <a
+              key={item}
+              href="#"
+              className="list-group-item list-group-item-action"
+            >
+              {item}
+            </a>
+          ))}
+        </div>
+      </Container>
+
+      <Container password="12345">
+        <p>
+          This is another container. You can put any content you like here, such as
+          text, images, or other components.
+        </p>
+      </Container>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
