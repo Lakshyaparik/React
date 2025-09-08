@@ -1,4 +1,8 @@
 //children passing
+//in this inputvalues not updating in UI 
+//to make it work use state
+// import React, { useState } from "react";
+//in 11 folders
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "./Container";
 import styles from "./App.module.css";
@@ -9,10 +13,15 @@ function App() {
     console.log("You bought " + item);
   };
 
+  let inputValues="";
+
   return (
     <>
-      <Container>
-        <input type="text" onChange={(e) => console.log(e.target.value)} />
+      <Container inputValues={inputValues}>
+        <input type="text" onChange={(e) => {
+          inputValues=e.target.value;
+          console.log(`Input value: ${inputValues}`);
+        }} />
       </Container>
       <Container>
         <h1>Food Items</h1>
