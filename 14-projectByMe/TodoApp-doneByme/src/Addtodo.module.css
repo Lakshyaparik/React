@@ -1,0 +1,17 @@
+.container{
+    background-color: #f5f5f5;
+    border: 1px solid black;
+    padding: 20px 0px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.myRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 45px;
+}

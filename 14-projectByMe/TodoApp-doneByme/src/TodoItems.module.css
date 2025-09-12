@@ -1,0 +1,12 @@
+.myRow{
+  border: 2px solid black;
+  padding-top: 16px;
+  border-radius: 5px;
+}
+.container{
+  margin: 0 5px 10px;
+  width: 600px;
+}
+.deleteButton{
+  transform: translateY(-7.7px);
+}
